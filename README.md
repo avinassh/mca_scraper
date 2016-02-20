@@ -87,4 +87,4 @@ check `multiprocessor_example.py` for a complete code.
 
 I used multiple machines and ran multiple processes. To scrape data for CIN, 5000 to 10,000:
 
-    python multi.py --start=5000 --end=10000
+    python multi-script.py --start=5000 --end=10000

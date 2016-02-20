@@ -60,7 +60,7 @@ def job(start, end):
     workbook = load_workbook('cin.xlsx')
     worksheet = workbook.active
 
-    result_name = "{} - {} - {}".format(start, end, 'results.xlsx')
+    result_name = "{}-{}-{}".format(start, end, 'results.xlsx')
     print('Starting: {}'.format(result_name))
 
     count = 0
@@ -85,8 +85,9 @@ def job(start, end):
             workbook.save(result_name)
             time.sleep(5)
 
-    print('Ending: {}'.format(result_name))
     workbook.save(result_name)
+    print('Ending: {}'.format(result_name))
+
 
 if __name__ == '__main__':
     args = parser.parse_args()
